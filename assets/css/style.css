@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #0E0E1B;
-    color: #22B455;
+    background-color: #36213E;
+    color: #8AC6D0;
 }
 
 h1 {
@@ -48,4 +48,22 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+.btn {
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #80ce87;
+    background: #554971;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 3px #8AC6D0;
+    transition: transform 300ms;
+    transform: scale(1.02);
 }
