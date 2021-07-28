@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 
+:root {
+    background-color: #36213E;
+    color: #8AC6D0;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Teko', sans-serif;
-}
-
-body {
-    background-color: #36213E;
-    color: #8AC6D0;
 }
 
 h1 {
@@ -24,8 +24,8 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 80rem;
-    padding: 10px;
+    max-width: 90rem;
+    padding: 2rem;
 }
 
 .flex-column {

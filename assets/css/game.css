@@ -1,0 +1,86 @@
+.choice-container {
+    display: flex;
+    width: 80%;
+    margin-bottom: 0.8rem;
+    font-size: 2.8rem;
+    border-radius: 4px;
+    min-width: 60rem;
+    background-color: #554971;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 2px #8AC6D0;
+    transition: transform 300ms;
+    transform: scale(1.01);
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: red;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background: #B8F3FF
+}
+
+.incorrect {
+    background: #8AC6D0
+}
+
+/* Display */
+#hud {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid red;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+#progessBarFull {
+    height: 100%;
+    background: red;
+    width: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
+
+/* figure out correct element sizing for mobile 480px and smaller */
+@media only screen and (max-device-width: 480px) {
+    .choice-container {
+        font-size: 1.3rem;
+        min-width: 30rem;
+    }
+    
+    #question1 {
+        font-size: 1rem;
+        min-width: 30rem;
+    }
+ }
+
+ /*continue fixing sizing for media queries before moving on to javascript*/
