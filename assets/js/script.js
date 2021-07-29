@@ -62,5 +62,16 @@ function startGame() {
 };
 
 function getNewQuestion() {
-
+    if (upcomingQuestions.length === 0 || questionCounter > totalQuestions)
+    localStorage.setItem('mostRecentScore', score)
+    return window.location.assign('/end.html')
+    
 };
+
+questionCounter++ 
+progressText.innerText = `Question${questionCounter} of ${totalQuestions}`
+progressBarFull.style.width = `${(questionCounter/totalQuestions) * 100}%`
+
+const questionIndex = Math.floor(Math.random() * upcomingQuestions.length);
+currentQuestion = upcomingQuestions[questionsIndex];
+question.innerText = currentQuestion.question;
