@@ -1,15 +1,18 @@
+/* Elements assigned to variables from the DOM class and id */
 let question = document.querySelector('#question');
 let choices = Array.from(document.querySelectorAll('choice.text'));
 let progressText = document.querySelector('#progressText');
 let scoreText = document.querySelector('#score');
 let progressBarFull = document.querySelector('#progressBarFull');
 
+/* Variables that will be inserted to the functions */
 let score = 0;
 let theAnswers = true;
 let upcomingQuestions = [];
 let currentQuestion = {};
 let questionCounter = 0;
 
+/* Game questions with 4 total choices */
 let questions = [
     {
         question: 'What year did the Raiders when their last Super Bowl?',
